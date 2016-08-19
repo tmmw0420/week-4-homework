@@ -1,0 +1,52 @@
+h1{
+	background-color: #d2691e; 
+	color: white;
+	box-sizing: border-box;
+	max-width: 50%;
+	margin-left: 10px;
+	padding: 20px 25px 20px 25px;
+}
+
+.instruct {
+	background-color: #ffe4c4;
+	color: #228b22;
+	box-sizing: border-box; 
+	max-width: 75%;
+	margin-left: 10px;
+	padding: 20px 25px 20px 25px;
+
+}
+
+.randomNum{
+	background-color: #3cb371;
+	color: #0000cd;
+	box-sizing: border-box;
+	width: 220px;
+	height: 100px;
+	margin-left: 10px;
+	padding: 20px 25px 20px 25px;
+
+}
+
+.winLosebox{
+	background-color: #7fffd4;
+	box-sizing: border-box;
+	width: 50%;
+	
+}
+
+.scoreIs{
+	background-color: #20b2aa;
+	color: white;
+	box-sizing: border-box;
+}
+
+.scoreTracker{
+	background-color: #20b2aa;
+	color: white;
+	box-sizing: border-box;
+}
+
+.buttons{
+	border: black solid;
+}
