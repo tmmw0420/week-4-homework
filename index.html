@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<title>CrystalsCollector!</title>
+</head>
+<body background="/asanoha-400px.png">
+	<div class="heading"><h1>CrystalsCollector!</h1>
+	</div>
+	<div class="instruct">
+		<p> You will be given a random number at the start of the game. </p>
+		<p> There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+		<p> You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+		<p> The value of each crystal is hidden from you unitl you click on it.</p>
+		<p>Each time when the game starts, the game will change the values of each crystal</p>
+	</div>
+	<p></p>
+	<div class= "randomNum"><p>random number box help</p>
+	</div>
+	<div class="winLosebox"><p>wins and losses box</p>
+	</div>
+	<div class="buttons">
+		<button  onclick="randomNum()" class="redCrys"><img src= "assets/images/Purple Diamond.jpg" height="100px" width="100px"></button>
+		<button class="blueCrys"><img src= "assets/images/Green Emerald.jpg" height="100px" width="100px"></button>
+		<button class="yellowCrys"><img src= "assets/images/Blue Orange.jpg" height="100px" width="100px"></button>
+		<button class="greenCrys"><img src= "assets/images/Orange Purple.jpg" height="100px" width="100px"></button>
+	</div>	
+	<p class=scoreIs>Your total score is:</p>
+	<div class="scoreTracker">This section shows the actual score
+	</div>
+
+<script type="text/javascript">
+
+$( document ).ready(function() {
+    Math.floor((Math.random() *19) +1);
+    (randomNum).innerHTML;
+    console.log( "ready!" );
+});
+
+function randomNum() {
+	var randomNum = Math.floor((Math.random()* 19) +1);
+	document.getElementById(randomNum).innerHTML = x;
+	console.log('what happened');
+
+//$('.redCrys').click(function) {
+//	console.log('You clicked redCrys')
+//}
+
+
+
+//$(document).ready(function(){
+  //  $("button").click(function(){
+    //    $("p").();
+    //});
+//});
+
+//var randomNum = Math.floor(Math.random()*19);
+//	function randomWholeNum() {
+//	return Math.random().html;
+//	condole.log(randomNum);
+//	}
+	//guess to play the game
+	//At the start of the game generate a random number in the randomNum div
+	//There are 4 crystals
+		//Each reprsents a number that is hidden from the player
+		//Each click on a crystal will add points to your total score 	equal to what the cystal is worth
+		//Click on each crystal to see how much it is work
+		//goal is match your score(clicks) to the randomNum
+		//When score matches the randomNum then there is a win
+		//Need to create a tally for the win - say: you won
+		//if win is caluclatated pop up with message that says "you won!"
+		//The random number resets
+		//The total score resets
+		//Need to create a tally for a loss
+		//When use loses reset the randon number and the score, say you lose
+		//The numbers generated in the crystals are randonly generated between 1 and 12
+		//Randomly generated that you are going to guess 19 to 120
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
